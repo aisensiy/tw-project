@@ -10,6 +10,23 @@ ul, li {
 }
 /* end reset */
 
+/* sticky footer */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0 0 70px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* end sticky footer */
+
 body {
   font-family: 'Helvetica Neue', sans-serif;
 }
@@ -93,10 +110,7 @@ div.submit button {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  height: 70px;
   background-color: #ccc;
   line-height: 70px;
   text-align: center;
