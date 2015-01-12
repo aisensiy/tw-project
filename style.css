@@ -75,6 +75,8 @@ ul.menu-list label {
 
 ul.menu-list label input[type=checkbox] {
   vertical-align: middle;
+  position: relative;
+  bottom: 1px;
 }
 
 div.submit {
