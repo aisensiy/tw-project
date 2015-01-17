@@ -64,20 +64,32 @@ section {
 }
 
 ul.menu-list li {
-  height: 50px;
-  border-bottom: 1px solid #ccc;
+  height: 100px;
   margin-bottom: 15px;
-  padding: 0 10px 0;
+  padding: 0 10px 10px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
 }
 
 ul.menu-list li > * {
   display: inline-block;
 }
 
+ul.menu-list li img {
+  vertical-align: middle;
+  height: 100px;
+  width: 140px;
+  margin-right: 30px;
+}
+
+ul.menu-list li > div > * {
+  display: inline-block;
+}
+
 ul.menu-list .dish-name {
   width: 150px;
   font-size: 1.5em;
-  line-height: 50px;
+  line-height: 100px;
 }
 
 ul.menu-list .price {
