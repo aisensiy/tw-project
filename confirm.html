@@ -1,0 +1,17 @@
+<section class="menu-container" ng-controller="ConfirmController as confirmCtrl">
+  <div class="dishes-wrapper">
+    <h2>已选菜品</h2>
+    <ul class="menu-list">
+      <li ng-repeat="dish in checked_dishes">
+      <img ng-src="images/{{dish.image}}" alt="" />
+      <div>
+        <p class="dish-name">{{dish.dish_name}}</p>
+        <p class="price">{{dish.price}}元</p>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="submit">
+    <span class="total">共{{ total }}元</span>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<section class="menu-container" ng-controller="MenuController as menuCtrl">
+  <div class="dishes-wrapper">
+    <h2>可选菜品</h2>
+    <ul class="menu-list">
+      <li ng-repeat="dish in dishes">
+      <img ng-src="images/{{dish.image}}" alt="" />
+      <div>
+        <p class="dish-name">{{dish.dish_name}}</p>
+        <p class="price">{{dish.price}}元</p>
+        <label> 选择
+          <input type="checkbox" name="dishes[]" value="1" id="some_name" ng-click="updateCheckedDishes($index)">
+        </label>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="submit">
+    <button type="button" ng-click="go('/confirm')">提交</button>
+  </div>
+</section>
