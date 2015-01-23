@@ -63,6 +63,11 @@ section {
   margin-bottom: 20px;
 }
 
+.menu-container > div.dishes-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
 ul.menu-list li {
   height: 100px;
   margin-bottom: 15px;
@@ -87,13 +92,13 @@ ul.menu-list li > div > * {
 }
 
 ul.menu-list .dish-name {
-  width: 150px;
+  width: 120px;
   font-size: 1.5em;
   line-height: 100px;
 }
 
 ul.menu-list .price {
-  width: 100px;
+  width: 30px;
   line-height: 50px;
   color: #ff2d4b;
 }
@@ -111,6 +116,7 @@ ul.menu-list label input[type=checkbox] {
 div.submit {
   padding: 10px 0 10px;
   text-align: right;
+  clear: both;
 }
 
 div.submit button {

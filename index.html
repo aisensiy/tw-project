@@ -4,59 +4,15 @@
   <title>订餐系统 - 菜品选择</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script src="bower_components/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+  <script src="bower_components/angular-route/angular-route.js" type="text/javascript" charset="utf-8"></script>
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
+<body ng-app="lunch-booker">
   <header>
     <h1>订餐系统</h1>
   </header>
-  <section class="menu-container">
-    <h2>可选菜品</h2>
-    <ul class="menu-list">
-      <li>
-        <img src="images/gongbaojidingfan.jpeg" alt="" />
-        <div>
-          <p class="dish-name">宫保鸡丁饭</p>
-          <p class="price">18元</p>
-          <label> 选择
-            <input type="checkbox" name="dishes[]" value="1" id="some_name">
-          </label>
-        </div>
-      </li>
-      <li>
-        <img src="images/mizhijipaifan.jpeg" alt="" />
-        <div>
-          <p class="dish-name">秘制鸡排饭</p>
-          <p class="price">18元</p>
-          <label> 选择
-            <input type="checkbox" name="dishes[]" value="1" id="some_name">
-          </label>
-        </div>
-      </li>
-      <li>
-        <img src="images/biandoumenmian.jpg" alt="" />
-        <div>
-          <p class="dish-name">扁豆焖面</p>
-          <p class="price">18元</p>
-          <label> 选择
-            <input type="checkbox" name="dishes[]" value="1" id="some_name">
-          </label>
-        </div>
-      </li>
-      <li>
-        <img src="images/xiangchangchaofan.jpeg" alt="" />
-        <div>
-          <p class="dish-name">香肠炒饭</p>
-          <p class="price">18元</p>
-          <label> 选择
-            <input type="checkbox" name="dishes[]" value="1" id="some_name">
-          </label>
-        </div>
-      </li>
-    </ul>
-    <div class="submit">
-      <button type="submit">提交</button>
-    </div>
-  </section>
+  <div ng-view></div>
   <footer>
     company name
   </footer>
